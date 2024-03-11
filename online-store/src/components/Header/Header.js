@@ -4,8 +4,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-// Importing Logo
+// Importing Logo and icons
 import logo from '../../images/platoLogo.webp';
+import shoppingBag from '../../images/shoppingBag.svg';
 // Importing stylsheet
 import './header.css';
 
@@ -16,14 +17,17 @@ export default function Header() {
       {/* Off-canvas Navbar from Bootstrap */}
       <Navbar expand={false} className="mb-3">
         <Container fluid>
+          <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Brand href="#">
             <img src={logo} alt='"Plato Coffee" Logo' className='img-fluid nav-logo-img' />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="offcanvasNavbar" />
+          <Nav.Link href="#action1">
+            <img src={shoppingBag} alt='Shopping Bag icon' />
+          </Nav.Link>
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
-            placement="end"
+            placement="start"
           >
             <Offcanvas.Header closeButton>
             </Offcanvas.Header>
