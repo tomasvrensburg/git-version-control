@@ -1,0 +1,16 @@
+/* ----- HEADER ----- */
+
+/* Header Logo */
+
+.nav-logo-img {
+  max-width: 500px;
+  min-width: none;
+  height: auto;
+}
+
+.navigationBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
