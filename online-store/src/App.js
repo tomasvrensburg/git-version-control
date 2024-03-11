@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header/Header';
 import Landing from './components/Landing/Landing';
 import Products from './components/Products/Products';
 import ShoppingCart from './components/ShoppingCart/ShoppingCart';
