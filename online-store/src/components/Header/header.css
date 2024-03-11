@@ -15,7 +15,11 @@
   align-items: center;
 }
 
-.nav-link {
+.navigation-link {
   text-decoration: none;
   color: #212529;
+  font-size: 1.1em;
+  display: block;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 12px;
 }
