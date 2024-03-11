@@ -17,13 +17,15 @@ export default function Header() {
       {/* Off-canvas Navbar from Bootstrap */}
       <Navbar expand={false} className="mb-3">
         <Container fluid>
-          <Navbar.Toggle aria-controls="offcanvasNavbar" />
-          <Navbar.Brand href="#">
-            <img src={logo} alt='"Plato Coffee" Logo' className='img-fluid nav-logo-img' />
-          </Navbar.Brand>
-          <Nav.Link href="#action1">
-            <img src={shoppingBag} alt='Shopping Bag icon' />
-          </Nav.Link>
+          <div className='navigationBar'>
+            <Navbar.Toggle aria-controls="offcanvasNavbar" />
+            <Navbar.Brand href="#">
+              <img src={logo} alt='"Plato Coffee" Logo' className='img-fluid nav-logo-img' />
+            </Navbar.Brand>
+            <Nav.Link href="#action1">
+              <img src={shoppingBag} alt='Shopping Bag icon' />
+            </Nav.Link>
+          </div>
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
