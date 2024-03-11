@@ -22,6 +22,7 @@
   display: block;
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 12px;
+  text-align: start;
 }
 
 /* Removing default border from bootstrap toggler */
