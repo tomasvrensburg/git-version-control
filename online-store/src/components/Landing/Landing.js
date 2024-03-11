@@ -1,5 +1,7 @@
 import Header from "../Header/Header";
 import shop from "../../images/platoShop.webp";
+// Importing stylesheet
+import './landing.css';
 
 export default function Landing() {
   return (
