@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 // Importing Bootstrap components
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -19,11 +20,15 @@ export default function Header() {
         <Container fluid>
           <div className='navigationBar'>
             <Navbar.Toggle aria-controls="offcanvasNavbar" />
-            <Navbar.Brand href="#">
-              <img src={logo} alt='"Plato Coffee" Logo' className='img-fluid nav-logo-img' />
+            <Navbar.Brand>
+              <Link to="/">
+                <img src={logo} alt='"Plato Coffee" Logo' className='img-fluid nav-logo-img' />
+              </Link>
             </Navbar.Brand>
-            <Nav.Link href="#action1">
-              <img src={shoppingBag} alt='Shopping Bag icon' />
+            <Nav.Link>
+              <Link to="/cart">
+                <img src={shoppingBag} alt='Shopping Bag icon' />
+              </Link>
             </Nav.Link>
           </div>
           <Navbar.Offcanvas
@@ -35,9 +40,15 @@ export default function Header() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">Products</Nav.Link>
-                <Nav.Link href="#action2">Shopping Cart</Nav.Link>
+                <Nav.Link href="#action1">
+                  <Link to="/">Home</Link>
+                </Nav.Link>
+                <Nav.Link href="#action2">
+                  <Link to="/products">Products</Link>
+                </Nav.Link>
+                <Nav.Link href="#action2">
+                  <Link to="/cart">Shopping Cart</Link>
+                </Nav.Link>
                 <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
