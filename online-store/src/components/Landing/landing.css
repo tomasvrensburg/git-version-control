@@ -1,0 +1,10 @@
+/* ----- LANDING ----- */
+
+.banner-image {
+  height: 100vh;
+  background-image: url('../../images/platoShop.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 -10px;
+  margin-bottom: 60px;
+}
