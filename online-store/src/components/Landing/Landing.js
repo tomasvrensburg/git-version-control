@@ -1,10 +1,13 @@
 import Header from "../Header/Header";
+import shop from "../../images/platoShop.webp";
 
 export default function Landing() {
   return (
     <div className="Landing">
       <Header />
-      <div className="banner-image" />
+      <div className="banner-image">
+        <img src={shop} alt="A white counter adorned with various plants and greenery" />
+      </div>
       <h6>WELL HELLŌ</h6>
       <h2>Coffee sculpted. Community included.</h2>
       <p>
