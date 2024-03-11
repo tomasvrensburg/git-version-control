@@ -23,3 +23,8 @@
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 12px;
 }
+
+/* Removing default border from bootstrap toggler */
+.navbar-toggler {
+  border: none;
+}

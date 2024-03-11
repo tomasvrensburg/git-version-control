@@ -40,14 +40,14 @@ export default function Header() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1">
-                  <Link to="/">Home</Link>
+                <Nav.Link>
+                  <Link to="/" className='navigation-link'>Home</Link>
                 </Nav.Link>
-                <Nav.Link href="#action2">
-                  <Link to="/products">Products</Link>
+                <Nav.Link>
+                  <Link to="/products" className='navigation-link'>Products</Link>
                 </Nav.Link>
-                <Nav.Link href="#action2">
-                  <Link to="/cart">Shopping Cart</Link>
+                <Nav.Link>
+                  <Link to="/cart" className='navigation-link'>Shopping Cart</Link>
                 </Nav.Link>
                 <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
