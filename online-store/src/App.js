@@ -9,7 +9,6 @@ import ShoppingCart from './components/ShoppingCart/ShoppingCart';
 function App() {
   return (
     <div className="App">
-      <Header />
       <Routes>
         <Route exact path="/" element={<Landing />} />
         <Route path="/cart" element={<ShoppingCart />} />
