@@ -6,6 +6,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 // Importing Logo
 import logo from '../../images/platoLogo.webp';
+// Importing stylsheet
+import './header.css';
 
 export default function Header() {
   return (
@@ -15,7 +17,7 @@ export default function Header() {
       <Navbar expand={false} className="mb-3">
         <Container fluid>
           <Navbar.Brand href="#">
-            <img src={logo} alt='"Plato Coffee" Logo' className='img-fluid' />
+            <img src={logo} alt='"Plato Coffee" Logo' className='img-fluid nav-logo-img' />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
