@@ -21,7 +21,6 @@ import productOne from '../../images/IMG_0949.jpg.webp';
 import productTwo from '../../images/IMG_0895.jpg.webp';
 import productThree from '../../images/IMG_0874.jpg.webp';
 import productFour from '../../images/IMG_0716.jpg.webp';
-import bedfordviewStore from '../../images/bedfordviewStore.webp';
 
 export default function Landing() {
   // Array for image src
@@ -87,7 +86,6 @@ export default function Landing() {
         </Row>
       </section>
       <section id="featuredStore">
-        <img src={bedfordviewStore} alt="Our store in Bedfordview" className="storeImage" />
         <p>CAFE #31 . 5 AUGUST 2023</p>
         <h1>Bedfordview</h1>
         <p>
