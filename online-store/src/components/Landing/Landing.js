@@ -65,16 +65,24 @@ export default function Landing() {
         <h2>Featured products</h2>
         <Row sm={2} md={4} className="g-4">
           <Col>
-            <img src={productOne} className="img-fluid" alt="" />
+            <img src={productOne} className="img-fluid" alt="Man wearing sage Plato sweater" />
+            <p>Men's Sweater - Sage</p>
+            <p className="featuredProduct-price">R 750.00</p>
           </Col>
           <Col>
-            <img src={productTwo} className="img-fluid" alt="" />
+            <img src={productTwo} className="img-fluid" alt="Man wearing grey unisex t-shirt with Plato logo" />
+            <p>Unisex Tee - Grey Melange - Plato</p>
+            <p className="featuredProduct-price">R 250.00</p>
           </Col>
           <Col>
-            <img src={productThree} className="img-fluid" alt="" />
+            <img src={productThree} className="img-fluid" alt="Woman wearing grey unisex t-shirt with Ō on" />
+            <p>Unisex Tee -Grey Melange - Ō</p>
+            <p className="featuredProduct-price">R 250.00</p>
           </Col>
           <Col>
-            <img src={productFour} className="img-fluid" alt="" />
+            <img src={productFour} className="img-fluid" alt="Woman wearing sage Plato sweater" />
+            <p>Ladies Sweater - Sage</p>
+            <p className="featuredProduct-price">R 750.00</p>
           </Col>
         </Row>
       </section>
