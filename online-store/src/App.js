@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Landing from './components/Landing/Landing';
 import Products from './components/Products/Products';
 import ShoppingCart from './components/ShoppingCart/ShoppingCart';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/cart" element={<ShoppingCart />} />
         <Route path="/products" element={<Products />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
