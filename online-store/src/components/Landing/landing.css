@@ -38,4 +38,13 @@
   width: 100vw;
   margin: -10px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  padding: 60px;
+}
+
+#featuredStore p {
+  margin: 10px 0;
 }
