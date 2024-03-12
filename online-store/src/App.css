@@ -12,6 +12,11 @@ body {
   text-align: center;
 }
 
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
 h6 {
   font-size: 0.8em;
   letter-spacing: 1px;
