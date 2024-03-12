@@ -41,7 +41,6 @@ export default function Landing() {
 
   return (
     <div className="Landing">
-      <Header />
       <div className="banner-image">
       </div>
       <h6>WELL HELLŌ</h6>
