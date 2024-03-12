@@ -28,3 +28,13 @@
 .featured-container {
   margin-top: 10px;
 }
+
+/* Featered Store */
+
+#featuredStore {
+  background-image: url('../../images/bedfordviewStore.webp');
+  background-size: cover;
+  height: 90vh;
+  width: 100vw;
+  margin: -10px;
+}
