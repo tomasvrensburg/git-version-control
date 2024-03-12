@@ -18,3 +18,13 @@
 .gallery {
   margin: 100px 40px;
 }
+
+/* Featured Products */
+
+#featuredProdcuts {
+  margin: 20px 60px;
+}
+
+.featured-container {
+  margin-top: 10px;
+}
