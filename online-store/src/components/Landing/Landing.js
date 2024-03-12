@@ -93,7 +93,7 @@ export default function Landing() {
         </p>
         <br />
         <p>Mon - Sat: 6am - 6pm . Sun: 7am - 6pm</p>
-        <a href="https://maps.app.goo.gl/oKznRf2nfJCdzSvx5" target="_blank">GOOGLE MAPS</a>
+        <a href="https://maps.app.goo.gl/oKznRf2nfJCdzSvx5" target="_blank" rel="noreferrer">GOOGLE MAPS</a>
       </section>
       {/* ---------- Footer ---------- */}
     </div>
