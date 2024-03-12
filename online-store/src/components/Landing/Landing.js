@@ -21,7 +21,7 @@ import productOne from '../../images/IMG_0949.jpg.webp';
 import productTwo from '../../images/IMG_0895.jpg.webp';
 import productThree from '../../images/IMG_0874.jpg.webp';
 import productFour from '../../images/IMG_0716.jpg.webp';
-
+import bedfordviewStore from '../../images/bedfordviewStore.webp';
 
 export default function Landing() {
   // Array for image src
@@ -63,7 +63,7 @@ export default function Landing() {
       </div >
       <section id="featuredProdcuts">
         <h2>Featured products</h2>
-        <Row sm={2} md={4} className="g-4">
+        <Row sm={2} md={4} className="g-4 featured-container">
           <Col>
             <img src={productOne} className="img-fluid" alt="Man wearing sage Plato sweater" />
             <p>Men's Sweater - Sage</p>
@@ -86,6 +86,18 @@ export default function Landing() {
           </Col>
         </Row>
       </section>
+      <section id="featuredStore">
+        <img src={bedfordviewStore} alt="Our store in Bedfordview" className="storeImage" />
+        <p>CAFE #31 . 5 AUGUST 2023</p>
+        <h1>Bedfordview</h1>
+        <p>
+          <em>55 Van Buuren Road, Bedfordview, Johannesburg.</em>
+        </p>
+        <br />
+        <p>Mon - Sat: 6am - 6pm . Sun: 7am - 6pm</p>
+        <a href="https://maps.app.goo.gl/oKznRf2nfJCdzSvx5" target="_blank">GOOGLE MAPS</a>
+      </section>
+      {/* ---------- Footer ---------- */}
     </div>
   );
 }
