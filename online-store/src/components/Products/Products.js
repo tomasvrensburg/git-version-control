@@ -4,7 +4,7 @@ import './products.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // Importing icon
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingCart, FaCheck } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/counter';
 
@@ -28,10 +28,18 @@ export default function Products() {
             <Col key={index}>
               <div className="productImage">
                 <img src={productCatalogue[index].image} alt="product" className="img-fluid" />
-                {!productCatalogue[index].addedToCart && <button className="addToCart-Button" onClick={() => dispatch(addToCart(index))}>
-                  Add to cart
-                  <FaShoppingCart className='icon' />
-                </button>}
+                {/* Button based on whether product is in cart or not */}
+                {!productCatalogue[index].addedToCart &&
+                  <button className="addToCart-Button"
+                    onClick={() => dispatch(addToCart(index))}>
+                    Add to cart
+                    <FaShoppingCart className='icon' />
+                  </button>}
+                {productCatalogue[index].addedToCart &&
+                  <button className="addedToCart-Button">
+                    Added To Cart
+                    <FaCheck className='icon' />
+                  </button>}
               </div>
               <p>{productCatalogue[index].title}</p>
               <p className="featuredProduct-price">
