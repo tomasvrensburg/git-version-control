@@ -12,3 +12,20 @@
   align-items: center;
   color: #fff;
 }
+
+.products-container {
+  margin: 20px 40px;
+}
+
+.productImage {
+  position: relative;
+}
+
+.addToCart-Button {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  border: none;
+  padding: 5px 10px;
+  color: #535454;
+}
