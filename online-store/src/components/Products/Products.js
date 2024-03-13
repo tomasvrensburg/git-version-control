@@ -22,15 +22,15 @@ export default function Products() {
           {Array.from({ length: 10 }).map((_, index) => (
             <Col key={index}>
               <div className="productImage">
-                <img src={imageSRC[index]} alt="product" className="img-fluid" />
+                <img src={productCatalogue[index].image} alt="product" className="img-fluid" />
                 <button className='addToCart-Button'>
                   Add to cart
                   <FaShoppingCart className='icon' />
                 </button>
               </div>
-              <p>{productTitle[index]}</p>
+              <p>{productCatalogue[index].title}</p>
               <p className="featuredProduct-price">
-                <strong>R {productPrice[index]}</strong>
+                <strong>R {productCatalogue[index].price}</strong>
               </p>
             </Col>
           ))}
