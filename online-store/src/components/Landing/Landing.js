@@ -40,8 +40,7 @@ export default function Landing() {
 
   return (
     <div className="Landing">
-      <div className="banner-image">
-      </div>
+      <div className="banner-image" />
       <h6>WELL HELLŌ</h6>
       <h2>Coffee sculpted. Community included.</h2>
       <p className="introduction">
