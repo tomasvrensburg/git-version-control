@@ -6,10 +6,15 @@ import Col from 'react-bootstrap/Col';
 // Importing icon
 import { FaShoppingCart } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
+import { addToCart } from '../../redux/counter';
 
 export default function Products() {
+  // Defining global variables
   const productCatalogue = useSelector((state) => state.counter.productCatalogue);
+  const cart = useSelector((state) => state.counter.cart);
   const dispatch = useDispatch();
+
+  console.log(cart);
 
   return (
     <div className="Products">
@@ -23,10 +28,10 @@ export default function Products() {
             <Col key={index}>
               <div className="productImage">
                 <img src={productCatalogue[index].image} alt="product" className="img-fluid" />
-                <button className='addToCart-Button'>
+                {!productCatalogue[index].addedToCart && <button className="addToCart-Button" onClick={() => dispatch(addToCart(index))}>
                   Add to cart
                   <FaShoppingCart className='icon' />
-                </button>
+                </button>}
               </div>
               <p>{productCatalogue[index].title}</p>
               <p className="featuredProduct-price">
