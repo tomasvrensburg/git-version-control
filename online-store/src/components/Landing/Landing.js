@@ -57,7 +57,7 @@ export default function Landing() {
           ))}
         </Row>
       </div >
-      <section id="featuredProdcuts">
+      <section id="featuredProducts">
         <h2>Featured products</h2>
         <Row sm={2} md={4} className="g-4 featured-container">
           <Col>
