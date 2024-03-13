@@ -14,8 +14,6 @@ export default function Products() {
   const cart = useSelector((state) => state.counter.cart);
   const dispatch = useDispatch();
 
-  console.log(cart);
-
   return (
     <div className="Products">
       <div className="products-banner-image">
