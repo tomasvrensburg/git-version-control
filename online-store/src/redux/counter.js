@@ -17,54 +17,65 @@ const initialState = {
     {
       image: productOne,
       title: "Men's Sweater - Sage",
-      price: 750.00
+      price: 750.00,
+      addedToCart: false
     },
     {
       image: productTwo,
       title: "Unisex Tee - Grey Melange - Plato",
-      price: 250.00
+      price: 250.00,
+      addedToCart: false
     },
     {
       image: productThree,
       title: "Unisex Tee - Grey Melange - Ō",
-      price: 250.00
+      price: 250.00,
+      addedToCart: false
     },
     {
       image: productFour,
       title: "Ladies Sweater - Sage",
-      price: 750.00
+      price: 750.00,
+      addedToCart: false
     },
     {
       image: productFive,
       title: "Unisex Sweater - Grey Melange",
-      price: 500.00
+      price: 500.00,
+      addedToCart: false
     },
     {
       image: productSix,
       title: "Plato House Blend - 1kg",
-      price: 350.00
+      price: 350.00,
+      addedToCart: false
     },
     {
       image: productSeven,
       title: "Plato house blend - 250g",
-      price: 100.00
+      price: 100.00,
+      addedToCart: false
     },
     {
       image: productEight,
       title: "Plato Socks",
-      price: 189.00
+      price: 189.00,
+      addedToCart: false
     },
     {
       image: productNine,
       title: "Plato Travel Mug",
-      price: 649.00
+      price: 649.00,
+      addedToCart: false
     },
     {
       image: productTen,
       title: "Plato Water Bottle",
-      price: 799.00
+      price: 799.00,
+      addedToCart: false
     }
-  ]
+  ],
+  cart: []
 };
 
 
@@ -73,19 +84,14 @@ export const counterSlice = createSlice({
   name: 'counter',
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1
-    },
-    decrement: (state) => {
-      state.value -= 1
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
-    },
+    addToCart: (state, action) => {
+      state.cart.push(state.productCatalogue[action.payload]);
+      state.productCatalogue[action.payload].addedToCart = true;
+    }
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { addToCart } = counterSlice.actions
 
 export default counterSlice.reducer
