@@ -49,7 +49,7 @@ export default function Landing() {
 
       <div className="gallery">
         <Row xs={1} sm={2} md={2} lg={3} xl={4} className="g-5">
-          {/* Array for rendering cards */}
+          {/* Array for rendering gallery */}
           {Array.from({ length: 12 }).map((_, index) => (
             <Col key={index}>
               <img src={imageSRC[index]} alt="Gallery" className="galleryImage img-fluid" />
