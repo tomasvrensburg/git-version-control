@@ -59,7 +59,7 @@ export default function Landing() {
       </div >
       <section id="featuredProducts">
         <h2>Featured products</h2>
-        <Row sm={2} md={4} className="g-4 featured-container">
+        <Row xs={2} sm={2} md={4} className="g-4 featured-container">
           <Col>
             <img src={productOne} className="img-fluid" alt="Man wearing sage Plato sweater" />
             <p>Men's Sweater - Sage</p>
