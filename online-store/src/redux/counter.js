@@ -18,61 +18,71 @@ const initialState = {
       image: productOne,
       title: "Men's Sweater - Sage",
       price: 750.00,
-      addedToCart: false
+      addedToCart: false,
+      quantity: 0
     },
     {
       image: productTwo,
       title: "Unisex Tee - Grey Melange - Plato",
       price: 250.00,
-      addedToCart: false
+      addedToCart: false,
+      quantity: 0
     },
     {
       image: productThree,
       title: "Unisex Tee - Grey Melange - Ō",
       price: 250.00,
-      addedToCart: false
+      addedToCart: false,
+      quantity: 0
     },
     {
       image: productFour,
       title: "Ladies Sweater - Sage",
       price: 750.00,
-      addedToCart: false
+      addedToCart: false,
+      quantity: 0
     },
     {
       image: productFive,
       title: "Unisex Sweater - Grey Melange",
       price: 500.00,
-      addedToCart: false
+      addedToCart: false,
+      quantity: 0
     },
     {
       image: productSix,
       title: "Plato House Blend - 1kg",
       price: 350.00,
-      addedToCart: false
+      addedToCart: false,
+      quantity: 0
     },
     {
       image: productSeven,
       title: "Plato house blend - 250g",
       price: 100.00,
-      addedToCart: false
+      addedToCart: false,
+      quantity: 0
     },
     {
       image: productEight,
       title: "Plato Socks",
       price: 189.00,
-      addedToCart: false
+      addedToCart: false,
+      quantity: 0
     },
     {
       image: productNine,
       title: "Plato Travel Mug",
       price: 649.00,
-      addedToCart: false
+      addedToCart: false,
+      quantity: 0
     },
     {
       image: productTen,
       title: "Plato Water Bottle",
       price: 799.00,
-      addedToCart: false
+      addedToCart: false,
+      quantity: 0
     }
   ],
   cart: []
@@ -87,6 +97,7 @@ export const counterSlice = createSlice({
     addToCart: (state, action) => {
       state.cart.push(state.productCatalogue[action.payload]);
       state.productCatalogue[action.payload].addedToCart = true;
+      state.productCatalogue[action.payload].quantity = + 1;
     }
   },
 })
