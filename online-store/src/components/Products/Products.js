@@ -3,62 +3,13 @@ import './products.css';
 // Importing bootstrap components
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// Importing images
-import productOne from '../../images/IMG_0949.jpg.webp';
-import productTwo from '../../images/IMG_0895.jpg.webp';
-import productThree from '../../images/IMG_0874.jpg.webp';
-import productFour from '../../images/IMG_0716.jpg.webp';
-import productFive from '../../images/productFive.jpg';
-import productSix from '../../images/productSix.jpg';
-import productSeven from '../../images/productSeven.jpg';
-import productEight from '../../images/productEight.jpg';
-import productNine from '../../images/productNine.jpg';
-import productTen from '../../images/productTen.jpg';
 // Importing icon
 import { FaShoppingCart } from 'react-icons/fa';
+import { useSelector, useDispatch } from 'react-redux';
 
 export default function Products() {
-  // Array for image src
-  const imageSRC = [
-    productOne,
-    productTwo,
-    productThree,
-    productFour,
-    productFive,
-    productSix,
-    productSeven,
-    productEight,
-    productNine,
-    productTen
-  ];
-
-  // Array for product title
-  const productTitle = [
-    "Men's Sweater - Sage",
-    "Unisex Tee - Grey Melange - Plato",
-    "Unisex Tee - Grey Melange - Ō",
-    "Ladies Sweater - Sage",
-    "Unisex Sweater - Grey Melange",
-    "Plato House Blend - 1kg",
-    "Plato house blend - 250g",
-    "Plato Socks",
-    "Plato Travel Mug",
-    "Plato Water Bottle"
-  ];
-
-  // Array for product prices
-  const productPrice = [
-    750.00,
-    250.00,
-    250.00,
-    750.00,
-    500.00,
-    350.00,
-    100.00,
-    189.00,
-    649.00,
-    799
-  ];
+  const productCatalogue = useSelector((state) => state.counter.productCatalogue);
+  const dispatch = useDispatch();
 
   return (
     <div className="Products">
