@@ -15,13 +15,13 @@ export default function Footer() {
           <p>2024 © Platō Coffee</p>
           <p>Coffee sculpted. Community included.</p>
           <p>07122019</p>
-          <a href="" target="_blank" rel="noreferrer" className="footer-link">
+          <a href="https://www.facebook.com/coffee.plato/" target="_blank" rel="noreferrer" className="footer-link">
             <FaFacebookSquare />
           </a>
-          <a href="" target="_blank" rel="noreferrer" className="footer-link">
+          <a href="https://www.instagram.com/plato.coffee/" target="_blank" rel="noreferrer" className="footer-link">
             <FaInstagram />
           </a>
-          <a href="" target="_blank" rel="noreferrer" className="footer-link">
+          <a href="https://www.tiktok.com/@plato.coffee" target="_blank" rel="noreferrer" className="footer-link">
             <FaTiktok />
           </a>
         </Col>
