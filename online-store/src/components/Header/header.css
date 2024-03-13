@@ -29,3 +29,10 @@
 .navbar-toggler {
   border: none;
 }
+
+@media screen and (max-width: 768px) {
+  .nav-logo-img {
+    max-width: 300px;
+    padding-left: 10px;
+  }
+}
