@@ -77,6 +77,19 @@
   font-weight: 300;
 }
 
+#checkout {
+  text-align: start;
+  margin: 40px;
+}
+
+.help-icon:hover {
+  color: #9e9b9b;
+}
+
+#express, #standard, #collect {
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 800px) {
   .cart-container {
     margin: 0;
