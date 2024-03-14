@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // Redux methods
 import { useSelector, useDispatch } from 'react-redux';
+import { increase, decrease } from '../../redux/counter';
 
 export default function ShoppingCart() {
   // Defining global variables
@@ -32,11 +33,11 @@ export default function ShoppingCart() {
               </Col>
               <Col xs="auto" className='cart-column'>
                 <div className='quantity-container'>
-                  <button id='decrease'>
+                  <button id='decrease' onClick={() => dispatch(decrease(index))}>
                     <FaMinus />
                   </button>
                   <div id='quantity'>{cart[index].quantity}</div>
-                  <button id='increase'>
+                  <button id='increase' onClick={() => dispatch(increase(index))}>
                     <FaPlus />
                   </button>
                 </div>
