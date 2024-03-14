@@ -14,6 +14,14 @@ export default function ShoppingCart() {
   const cart = useSelector((state) => state.counter.cart);
   const dispatch = useDispatch();
 
+  // Calculating total amount of cart
+  let total = 0;
+  cart.forEach(item => {
+    total += (item.quantity * item.price);
+  });
+
+  console.log(total);
+
   return (
     <div className="ShoppingCart">
       <h2>
@@ -47,6 +55,7 @@ export default function ShoppingCart() {
             <hr />
           </>
         ))}
+        <h2>Total: R {total}</h2>
       </div>
     </div>
   );
