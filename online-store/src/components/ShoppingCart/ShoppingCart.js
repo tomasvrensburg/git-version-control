@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // Redux methods
 import { useSelector, useDispatch } from 'react-redux';
-import { increase, decrease } from '../../redux/counter';
+import { increase, decrease, removeFromCart } from '../../redux/counter';
 
 export default function ShoppingCart() {
   // Defining global variables
@@ -41,7 +41,7 @@ export default function ShoppingCart() {
                     <FaPlus />
                   </button>
                 </div>
-                <button id='removeButton'>Remove</button>
+                <button id='removeButton' onClick={() => dispatch(removeFromCart(index))}>Remove</button>
               </Col>
             </Row>
             <hr />
