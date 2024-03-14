@@ -11,7 +11,6 @@ import { addToCart } from '../../redux/counter';
 export default function Products() {
   // Defining global variables
   const productCatalogue = useSelector((state) => state.counter.productCatalogue);
-  const cart = useSelector((state) => state.counter.cart);
   const dispatch = useDispatch();
 
   return (
