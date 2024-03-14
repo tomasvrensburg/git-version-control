@@ -34,3 +34,7 @@ p {
   padding-bottom: 2px;
 }
 
+.block {
+  display: flex;
+  flex-direction: column;
+}
